@@ -1,42 +1,162 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Anystat.">
+  <meta name="keywords" content="Anystat, Statistics, Data Science, Agent">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Anystat</title>
-  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./images/anystat_icon.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <style>
+    #videoGrid {
+      width: 100%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    #videoGrid video {
+      width: 100%;
+      height: auto;
+    }
+  </style>
 </head>
 <body>
 
-  <header class="hero">
-    <div class="container">
-      <h1>Anystat: A Anystat</h1>
-      <p class="authors">
-        <span>aaa *¹</span>,
-        <span>bbb *²⁴</span>,
-        <span>ccc ‡¹²³</span>,
-        <span>ddd ‡¹²³</span>
-      </p>
-      <p class="affiliations">
-        ¹Department of Statistics and Data Science, Tsinghua University &nbsp; ²Department of Statistics and Data Science, Shanghai University of Finance and Economics &nbsp;
-      </p>
-      <div class="btn-group">
-        <a href="https://arxiv.org/…" class="btn">arXiv</a>
-        <a href="https://github.com/…" class="btn">Code</a>
-        <a href="https://twitter.com/…" class="btn">Twitter</a>
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Anystat:A Data Science Agent for AAA</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a>AAA</a><sup>*1</sup>,</span>
+            <span class="author-block">
+              <a>AAA</a><sup>*2,4</sup>,</span>
+            <span class="author-block">
+              <a>AAA</a><sup>‡1,2,3</sup>,
+            </span>
+            <span class="author-block">
+              <a>AAA</a><sup>‡1,2,3</sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Department of Statistics and Data Science, Southern University of Science and Technology,</span>
+            <span class="author-block"><sup>2</sup>School of Statistics and Data Science, Shanghai University of Finance and Economics,</span>
+            <!-- <span class="author-block"><sup>3</sup>Shanghai Qi Zhi Institute,</span>
+            <span class="author-block"><sup>4</sup>UC San Diego</span> -->
+            <span class="author-block"><sup>*</sup>Equal Contribution</span>
+            <span class="author-block"><sup>‡</sup>Equal Advising</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/xxxx"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. (Coming Soon)-->
+              <span class="link-block">
+                <a href="https://github.com/ElvisWang1111/AAAAAnystat"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- <span class="link-block">
+                <a href="https://x.com/gengchen358/status/1900706657946267900"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-twitter"></i>
+                  </span>
+                  <span>Twitter</span>
+                  </a>
+              </span> -->
+              <!-- Dataset Link. -->
+            </div>
+
+          </div>
+        </div>
       </div>
     </div>
-  </header>
+  </div>
+</section>
 
-  <section class="hero-image">
-    <img src="img/hero.jpg" alt="Demo 图" />
-  </section>
+<section class="hero teaser">
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <div class="publication-video">
+        <iframe src="./images/fp3_video.mp4"
+                frameborder="0" allowfullscreen width="80%" height="180"></iframe>
+      </div>
 
-  <section class="features container">
-    <h2>Key Contributions</h2>
-    <ul>
-      <li>提出了首个面向 3D 操作的基础策略框架</li>
-    </ul>
-  </section>
+    </div>
+  </div>
+  <div style="text-align: center;">
+    <img src="./static/concept.jpg" width="80%" height="600px", alt="FP3 Concept">
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@misc{AAA,
+      title={Anystat: A Anystat}, 
+      author={AA and BBB and CCC and DDD},
+      year={2025},
+      eprint={2503.0xxx},
+      archivePrefix={arXiv},
+      primaryClass={stat.ML},
+      url={https://arxiv.org/abs/xxxx}, 
+}</code></pre>
+  </div>
+</section>
+<section class="section">
+  <div class="container is-max-desktop content has-text-centered">
+    <p>The website template is sourced from <a href="https://github.com/nerfies/nerfies.github.io">https://github.com/nerfies/nerfies.github.io</a></p>
+  </div>
+</section>
 </body>
 </html>
