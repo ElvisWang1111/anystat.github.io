@@ -12,15 +12,16 @@ body { font-family: "Helvetica Neue", Arial, sans-serif; color:#333; line-height
   padding: 4rem 1rem;
 }
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 4rem;
   margin-bottom: 1rem;
 }
 .hero .authors span {
+  font-size: 2rem;
   color: #007acc;
   margin-right: .5rem;
 }
 .hero .affiliations {
-  font-size: .9rem;
+  font-size: 2rem;
   color: #666;
   margin: .5rem 0 2rem;
 }
